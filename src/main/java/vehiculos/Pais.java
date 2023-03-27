@@ -1,9 +1,6 @@
 package vehiculos;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-public class Pais {
+public final class Pais {
 	String nombre;
 	
 	Pais(String nombre){
