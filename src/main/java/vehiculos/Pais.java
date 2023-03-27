@@ -7,10 +7,10 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-	void setNombre(String nombre) {this.nombre = nombre;}
-	String getNombre() {return nombre;}
+	public void setNombre(String nombre) {this.nombre = nombre;}
+	public String getNombre() {return nombre;}
 	
-	static String paisMasVendedor() {
+	public static String paisMasVendedor() {
 		return "";
 	}
 }

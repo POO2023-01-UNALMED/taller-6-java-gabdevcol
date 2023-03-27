@@ -27,47 +27,47 @@ public class Vehiculo {
 		CantidadVehiculos++;
 	}
 	
-	static String vehiculosPorTipo() {
+	public static String vehiculosPorTipo() {
 		return "Automoviles: " + String.valueOf(cantidadAutomoviles)+"\nCamionetas: "+String.valueOf(cantidadCamionetas)+"\nCamiones: " + String.valueOf(cantidadCamiones);
 	}
 
-	static String paisMasVendedor() {
+	public static String paisMasVendedor() {
 		return "";
 		}
 		
-	static String fabricaMayorVentas() {
+	public static String fabricaMayorVentas() {
 		return "";
 		}
 	
-	static void setCantidadVehiculos(int cantidad) {
+	public static void setCantidadVehiculos(int cantidad) {
 		CantidadVehiculos = cantidad;
 	}
-	static int getCantidadVehiculos() {
+	public static int getCantidadVehiculos() {
 		return CantidadVehiculos;
 	}
-	void setPlaca(String p) {placa = p;}
-	String getPlaca() {return placa;}
+	public void setPlaca(String p) {placa = p;}
+	public String getPlaca() {return placa;}
 	
-	void setPuertas(int p) {puertas = p;}
-	int getPuertas() {return puertas;}
+	public void setPuertas(int p) {puertas = p;}
+	public int getPuertas() {return puertas;}
 	
-	void setVelocidadMaxima(float v) {velocidadMaxima = v;}
-	float getVelocidadMaxima() {return velocidadMaxima;}
+	public void setVelocidadMaxima(float v) {velocidadMaxima = v;}
+	public float getVelocidadMaxima() {return velocidadMaxima;}
 	
-	void setNombre(String n) {nombre = n;}
-	String getNombre() {return nombre;}
+	public void setNombre(String n) {nombre = n;}
+	public String getNombre() {return nombre;}
 	
-	void setPrecio(float p) {precio = p;}
-	float getPrecio() {return precio;}
+	public void setPrecio(float p) {precio = p;}
+	public float getPrecio() {return precio;}
 	
-	void setPeso(double p) {peso = p;}
-	double getPeso() {return peso;}
+	public void setPeso(double p) {peso = p;}
+	public double getPeso() {return peso;}
 	
-	void setTraccion(String t) {traccion = t;}
-	String getTraccion() {return traccion;}
+	public void setTraccion(String t) {traccion = t;}
+	public String getTraccion() {return traccion;}
 	
-	void setFabricante(Fabricante f) {fabricante = f;}
-	Fabricante getFabricante() {return fabricante;}
+	public void setFabricante(Fabricante f) {fabricante = f;}
+	public Fabricante getFabricante() {return fabricante;}
 	
 }
 	

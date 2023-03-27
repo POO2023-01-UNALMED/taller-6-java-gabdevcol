@@ -10,13 +10,13 @@ public class Fabricante {
 		this.pais = pais;
 	}
 
-	void setNombre(String nombre) {this.nombre = nombre;}
+	public void setNombre(String nombre) {this.nombre = nombre;}
 	String getNombre() {return nombre;}
 	
-	void setPais(Pais pais) {this.pais = pais;}
+	public void setPais(Pais pais) {this.pais = pais;}
 	Pais getPais() {return pais;}
 	
-	static String fabricaMayorVentas() {
+	public static String fabricaMayorVentas() {
 		return "";
 	}
 }
