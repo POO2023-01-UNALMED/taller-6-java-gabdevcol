@@ -12,10 +12,8 @@ public class Vehiculo {
 	double peso;
 	String traccion;
 	Fabricante fabricante;
-	static int CantidadVehiculos, cAutomovil, cCamion, cCamioneta;
-	static ArrayList<String> listaPaises = new ArrayList<String>();
-	static ArrayList<String> listaFabricantes = new ArrayList<String>();
-	
+	static int CantidadVehiculos, cantidadAutomoviles, cantidadCamiones, cantidadCamionetas;
+		
 	
 	Vehiculo(String placa, int puertas, float velocidadMaxima, String nombre, float precio, double peso,
 			String traccion, Fabricante fabricante){
@@ -28,40 +26,21 @@ public class Vehiculo {
 		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
-		actualizarListaPaises(fabricante);
 		CantidadVehiculos++;
 	}
 	
 	static String vehiculosPorTipo() {
-		return "Automoviles: " + String.valueOf(cAutomovil)+"\nCamionetas: "+String.valueOf(cCamioneta)+"\nCamiones: " + String.valueOf(cCamion);
+		return "Automoviles: " + String.valueOf(cantidadAutomoviles)+"\nCamionetas: "+String.valueOf(cantidadCamionetas)+"\nCamiones: " + String.valueOf(cantidadCamiones);
 	}
-	void actualizarListaPaises(Fabricante fabricante) {
-			listaPaises.add(fabricante.pais.nombre);
-			}
-	void actualizarListaFabricantes(Fabricante fabricante) {
-		listaFabricantes.add(fabricante.nombre);
-		}
 
-	String paisMasVendedor() {
-		int cantidadVentas = 0;
-		String paisMasVendedor = "";
-		for(String pais : listaPaises) {
-			if (cantidadVentas < Collections.frequency(listaPaises, pais)) {
-				paisMasVendedor = pais;
-			}
+	static String paisMasVendedor() {
+		return "";
 		}
-		return paisMasVendedor;
-	}
-	String fabricanteMasVendedor() {
-		int cantidadVentas = 0;
-		String fabricanteMasVendedor = "";
-		for(String fabricante : listaFabricantes) {
-			if (cantidadVentas < Collections.frequency(listaFabricantes, fabricante)) {
-				fabricanteMasVendedor = fabricante;
-			}
+		
+	static String fabricaMayorVentas() {
+		return "";
 		}
-		return fabricanteMasVendedor;
-	}
+	
 	static void setCantidadVehiculos(int cantidad) {
 		CantidadVehiculos = cantidad;
 	}

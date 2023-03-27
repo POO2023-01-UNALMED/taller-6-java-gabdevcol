@@ -7,7 +7,7 @@ public class Camioneta extends Vehiculo{
 			 Fabricante fabricante, boolean volco){
 		super(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante);
 		this.volco = volco;
-		cCamioneta++;
+		cantidadCamionetas++;
 	}
 		
 	void setVolco(boolean volco){

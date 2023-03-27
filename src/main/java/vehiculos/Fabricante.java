@@ -1,5 +1,8 @@
 package vehiculos;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Fabricante {
 	String nombre;
 	Pais pais; 
@@ -9,19 +12,13 @@ public class Fabricante {
 		this.pais = pais;
 	}
 
-	void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+	void setNombre(String nombre) {this.nombre = nombre;}
+	String getNombre() {return nombre;}
 	
-	String getNombre() {
-		return nombre;
-	}
+	void setPais(Pais pais) {this.pais = pais;}
+	Pais getPais() {return pais;}
 	
-	void setPais(Pais pais) {
-		this.pais = pais;
-	}
-	
-	Pais getPais() {
-		return pais;
+	static String fabricaMayorVentas() {
+		return "";
 	}
 }
