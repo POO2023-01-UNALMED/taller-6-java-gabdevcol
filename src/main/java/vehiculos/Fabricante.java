@@ -20,9 +20,10 @@ public class Fabricante {
 	public void setPais(Pais pais) {this.pais = pais;}
 	public Pais getPais() {return pais;}
 	
-	public static String fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		int cantidadVentas = 0;
 		String fabrcanteMayorVentas = "";
+		Fabricante fabricanteMayor = new Fabricante("", new Pais(""));
 		ArrayList<String> nombreFabricante = new ArrayList<String>();
 		
 		
@@ -35,6 +36,14 @@ public class Fabricante {
 				fabrcanteMayorVentas = nombre;
 			}
 		}
-		return fabrcanteMayorVentas;
+		for(Vehiculo vehiculo : Vehiculo.listaVehiculos) {
+			
+			if(fabrcanteMayorVentas == vehiculo.fabricante.getNombre()){
+				fabricanteMayor = vehiculo.fabricante;
+				break;
+			}
+		}
+		return fabricanteMayor;
 	}
 }
+
