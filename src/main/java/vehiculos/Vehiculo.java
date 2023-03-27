@@ -13,7 +13,7 @@ public class Vehiculo {
 	static int CantidadVehiculos, cantidadAutomoviles, cantidadCamiones, cantidadCamionetas;
 		
 	
-	Vehiculo(String placa, int puertas, float velocidadMaxima, String nombre, float precio, double peso,
+	public Vehiculo(String placa, int puertas, float velocidadMaxima, String nombre, float precio, double peso,
 			String traccion, Fabricante fabricante){
 		
 		this.placa = placa;
