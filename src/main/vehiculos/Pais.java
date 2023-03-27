@@ -7,7 +7,6 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-	
 	void setNombre(String nombre) {
 		this.nombre = nombre;
 	}

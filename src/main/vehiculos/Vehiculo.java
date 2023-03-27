@@ -13,7 +13,9 @@ public class Vehiculo {
 	String traccion;
 	Fabricante fabricante;
 	static int CantidadVehiculos, cAutomovil, cCamion, cCamioneta;
-	static ArrayList<String> listaPaises, listaFabricantes;
+	static ArrayList<String> listaPaises = new ArrayList<String>();
+	static ArrayList<String> listaFabricantes = new ArrayList<String>();
+	
 	
 	Vehiculo(String placa, int puertas, float velocidadMaxima, String nombre, float precio, double peso,
 			String traccion, Fabricante fabricante){
@@ -27,11 +29,11 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		actualizarListaPaises(fabricante);
-		
+		CantidadVehiculos++;
 	}
 	
 	String vehiculosPorTipo() {
-		return"Automoviles: " + String.valueOf(cAutomovil)+"/n"+"Camionetas: "+String.valueOf(cCamioneta)+"/n"+"Camiones: " + String.valueOf(cCamion);
+		return "Automoviles: " + String.valueOf(cAutomovil)+"/n"+"Camionetas: "+String.valueOf(cCamioneta)+"/n"+"Camiones: " + String.valueOf(cCamion);
 	}
 	void actualizarListaPaises(Fabricante fabricante) {
 			listaPaises.add(fabricante.pais.nombre);
@@ -59,5 +61,11 @@ public class Vehiculo {
 			}
 		}
 		return fabricanteMasVendedor;
+	}
+	static void setCantidadVehiculos(int cantidad) {
+		CantidadVehiculos = cantidad;
+	}
+	static int getCantidadVehiculos() {
+		return CantidadVehiculos;
 	}
 }
