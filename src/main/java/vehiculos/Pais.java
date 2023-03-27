@@ -13,9 +13,10 @@ public class Pais {
 	public void setNombre(String nombre) {this.nombre = nombre;}
 	public String getNombre() {return nombre;}
 	
-	public static String paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		int cantidadVentas = 0;
 		String paisMayorVentas = "";
+		Pais paisMayor = new Pais("");
 		ArrayList<String> nombrePais = new ArrayList<String>();
 		
 		
@@ -27,7 +28,16 @@ public class Pais {
 				cantidadVentas = Collections.frequency(nombrePais, nombre);
 				paisMayorVentas = nombre;
 			}
+		for(Vehiculo vehiculo : Vehiculo.listaVehiculos) {
+				
+			if(paisMayorVentas == vehiculo.fabricante.pais.getNombre()){
+				paisMayor = vehiculo.fabricante.pais;
+				break;
+				}
+			}
 		}
-		return paisMayorVentas;
+		return paisMayor;
 	}
+		
 }
+
