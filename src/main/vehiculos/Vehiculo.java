@@ -32,8 +32,8 @@ public class Vehiculo {
 		CantidadVehiculos++;
 	}
 	
-	String vehiculosPorTipo() {
-		return "Automoviles: " + String.valueOf(cAutomovil)+"/n"+"Camionetas: "+String.valueOf(cCamioneta)+"/n"+"Camiones: " + String.valueOf(cCamion);
+	static String vehiculosPorTipo() {
+		return "Automoviles: " + String.valueOf(cAutomovil)+"\nCamionetas: "+String.valueOf(cCamioneta)+"\nCamiones: " + String.valueOf(cCamion);
 	}
 	void actualizarListaPaises(Fabricante fabricante) {
 			listaPaises.add(fabricante.pais.nombre);
