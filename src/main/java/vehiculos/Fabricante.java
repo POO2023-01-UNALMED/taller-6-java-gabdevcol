@@ -1,6 +1,6 @@
 package vehiculos;
 
-public static class Fabricante {
+public class Fabricante {
 	String nombre;
 	Pais pais; 
 	
