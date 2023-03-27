@@ -11,10 +11,12 @@ public class Fabricante {
 	}
 
 	public void setNombre(String nombre) {this.nombre = nombre;}
-	String getNombre() {return nombre;}
+	public String getNombre() {return nombre;}
+	
+	
 	
 	public void setPais(Pais pais) {this.pais = pais;}
-	Pais getPais() {return pais;}
+	public Pais getPais() {return pais;}
 	
 	public static String fabricaMayorVentas() {
 		return "";
